@@ -2,16 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>DebuggerSplitterCollapsed</key>
+	<false/>
 	<key>FolderExpanded_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/</key>
+	<true/>
+	<key>FolderExpanded_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</key>
 	<true/>
 	<key>LastBuildStatusLabel</key>
 	<string>Last build was successful</string>
 	<key>NavigationPaneActiveTab</key>
-	<real>0.0</real>
+	<real>3</real>
 	<key>Properties</key>
 	<dict/>
 	<key>SelectedNode</key>
-	<string>/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements---Properties</string>
+	<string>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</string>
 	<key>ViewMetaData</key>
 	<dict>
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/AppDelegate.pas</key>
@@ -37,12 +41,12 @@
 			<key>SelectionStartLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Keys.pas</key>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/GMNEmailBuilder.pas?type=Email&amp;member=Subject</key>
 		<dict>
 			<key>CursorX</key>
 			<integer>0</integer>
 			<key>CursorY</key>
-			<integer>0</integer>
+			<integer>12</integer>
 			<key>ScrollX</key>
 			<real>0.0</real>
 			<key>ScrollY</key>
@@ -57,6 +61,29 @@
 			<false/>
 			<key>SelectionStartColumn</key>
 			<integer>0</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Keys.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>48</integer>
+			<key>CursorY</key>
+			<integer>32</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>270</real>
+			<key>SelectionCursorUndecided</key>
+			<true/>
+			<key>SelectionEndColumn</key>
+			<integer>-1</integer>
+			<key>SelectionEndLine</key>
+			<integer>-1</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>-1</integer>
 			<key>SelectionStartLine</key>
 			<integer>-1</integer>
 		</dict>
@@ -83,14 +110,37 @@
 			<key>SelectionStartLine</key>
 			<integer>-1</integer>
 		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>113</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>1539</real>
+			<key>SelectionCursorUndecided</key>
+			<false/>
+			<key>SelectionEndColumn</key>
+			<integer>-1</integer>
+			<key>SelectionEndLine</key>
+			<integer>-1</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>-1</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
 	</dict>
 	<key>Window_Height</key>
-	<real>879</real>
+	<real>905</real>
 	<key>Window_Width</key>
-	<real>1555</real>
+	<real>1629</real>
 	<key>Window_X</key>
-	<real>173</real>
+	<real>112</real>
 	<key>Window_Y</key>
-	<real>167</real>
+	<real>126</real>
 </dict>
 </plist>

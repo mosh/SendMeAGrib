@@ -4,6 +4,7 @@ interface
 
 uses
   AppKit,
+  RemObjects.Elements.Linq,
   Foundation,Sugar;
 
 type
@@ -13,16 +14,27 @@ type
       method CancelAction;
       method OkAction;
       _settings:Settings;
+      method bindPopup(popupButton:NSPopUpButton;arrayController:NSArrayController;displayField:String);
+      
   protected
   public
     method init: instancetype; override;
     method windowDidLoad; override;
     [IBOutlet]property sendButton:weak NSButton;
-    [IBAction]method sendMail(sender:id);
     [IBOutlet]property settingsPopover:weak NSPopover;
     [IBOutlet]property KeysArrayController:weak NSArrayController;
     [IBOutlet]property settingsButton:weak NSButton;
+    [IBOutlet]property animationButton:weak NSButton;
+    [IBOutlet]property automaticScheduleButton:weak NSButton;
+    [IBOutlet]property timesButton:weak NSButton;
+    [IBOutlet]property numberOfDays:weak NSMatrix;
+    [IBOutlet]property timesTextField:weak NSTextField;
+    [IBOutlet]property KeyPopupButton:weak NSPopUpButton;
+    
     [IBAction]method doSettings(sender:id);
+    [IBAction]method sendMail(sender:id);
+    [IBAction]method cancelRequest(sender:id);
+    
   end;
 
 implementation
@@ -67,7 +79,9 @@ begin
     _settings.Password := value;
   end;
     
-  self.KeysArrayController.content := Keys.Systemkeys;
+  self.KeysArrayController.content := Keys.SystemKeys;
+  
+  bindPopup(KeyPopupButton, KeysArrayController,'Description');
   
   self.settingsPopover.contentViewController := new SettingsViewController;
   (self.settingsPopover.contentViewController as SettingsViewController).ParentController := self;
@@ -87,10 +101,17 @@ end;
 method MainWindowController.sendMail(sender: id);
 begin
   var builder := new GMNEmailBuilder;
-  var emailTo := builder.Build('Caribbean');
   
-  var mailer := new Mailer(self._settings.Host) withPort(465) withUsername(self._settings.Username) withPassword(self._settings.Password);
-  mailer.Send(emailTo);
+  var selected := self.KeysArrayController.selectedObjects.firstOrDefault;
+  
+  if(assigned(selected))then
+  begin
+    var someKey := selected as Key;
+    var emailTo := builder.Build(someKey.Name);
+    
+    var mailer := new Mailer(self._settings.Host) withPort(465) withUsername(self._settings.Username) withPassword(self._settings.Password);
+    mailer.Send(emailTo);
+  end;
     
 end;
 
@@ -122,6 +143,20 @@ begin
   defaults.synchronize;
   
   self.settingsPopover.close;
+end;
+
+method MainWindowController.cancelRequest(sender: id);
+begin
+  self.settingsPopover.close;
+end;
+
+method MainWindowController.bindPopup(popupButton:NSPopUpButton;arrayController:NSArrayController;displayField:String);
+begin
+  var options := new NSDictionary;
+  popupButton.bind('content') toObject(arrayController ) withKeyPath('arrangedObjects') options(options);
+  var keyPath := 'arrangedObjects.'+displayField;
+  popupButton.bind('contentValues') toObject(arrayController ) withKeyPath(keyPath) options(options);
+  popupButton.bind('selectedIndex') toObject(arrayController ) withKeyPath('selectionIndex') options(options);
 end;
 
 end.
