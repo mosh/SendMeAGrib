@@ -6,9 +6,9 @@ uses
   Foundation;
 
 type
-  IParentController = public interface
-    method CancelAction;
-    method OkAction;
+
+  IPoppedUpViewController = public interface
+    method willShow(newSettings:Settings);
   end;
 
 implementation

@@ -1,4 +1,4 @@
-﻿namespace MailCoreCocoaApplication;
+﻿namespace SendMeAGrib;
 
 interface
 
@@ -7,8 +7,10 @@ uses
 
 type
   [IBObject]
-  SettingsViewController = public class(NSViewController)
+  SettingsViewController = public class(NSViewController,IPoppedUpViewController)
   private
+    method willShow(newSettings:Settings);
+    
   protected
   public
     method init: instancetype; override;
@@ -39,6 +41,14 @@ end;
 method SettingsViewController.doOk(sender: id);
 begin
   self.ParentController.OkAction;
+end;
+
+method SettingsViewController.willShow(newSettings:Settings);
+begin
+  self.Settings.Host := newSettings.Host;
+  self.Settings.Port := newSettings.Port;
+  self.Settings.Username := newSettings.Username;
+  self.Settings.Password := newSettings.Password;
 end;
 
 

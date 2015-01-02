@@ -1,4 +1,4 @@
-namespace MailCoreCocoaApplication;
+﻿namespace SendMeAGrib;
 
 interface
 
