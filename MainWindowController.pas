@@ -68,6 +68,9 @@ end;
 method MainWindowController.windowDidLoad;
 begin
   inherited windowDidLoad();
+  
+  var formatter := new IntegerFieldFormatter withMaximumLength(5);
+  timesTextField.formatter := formatter;
 
   var defaults := NSUserDefaults.standardUserDefaults;
   

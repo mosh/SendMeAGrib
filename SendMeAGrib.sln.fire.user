@@ -92,15 +92,15 @@
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/GMNEmailBuilder.pas</key>
 		<dict>
 			<key>CursorX</key>
-			<integer>47</integer>
+			<integer>28</integer>
 			<key>CursorY</key>
-			<integer>54</integer>
+			<integer>27</integer>
 			<key>ScrollX</key>
 			<real>0.0</real>
 			<key>ScrollY</key>
-			<real>535</real>
+			<real>175</real>
 			<key>SelectionCursorUndecided</key>
-			<false/>
+			<true/>
 			<key>SelectionEndColumn</key>
 			<integer>-1</integer>
 			<key>SelectionEndLine</key>
@@ -227,6 +227,29 @@
 			<key>SelectionStartLine</key>
 			<integer>-1</integer>
 		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/IntegerFieldFormatter.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>13</integer>
+			<key>CursorY</key>
+			<integer>9</integer>
+			<key>ScrollX</key>
+			<real>6</real>
+			<key>ScrollY</key>
+			<real>0.0</real>
+			<key>SelectionCursorUndecided</key>
+			<true/>
+			<key>SelectionEndColumn</key>
+			<integer>23</integer>
+			<key>SelectionEndLine</key>
+			<integer>9</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>2</integer>
+			<key>SelectionStartLine</key>
+			<integer>9</integer>
+		</dict>
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Keys.pas</key>
 		<dict>
 			<key>CursorX</key>
@@ -276,13 +299,13 @@
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</key>
 		<dict>
 			<key>CursorX</key>
-			<integer>27</integer>
+			<integer>40</integer>
 			<key>CursorY</key>
-			<integer>149</integer>
+			<integer>72</integer>
 			<key>ScrollX</key>
 			<real>0.0</real>
 			<key>ScrollY</key>
-			<real>2079</real>
+			<real>1039</real>
 			<key>SelectionCursorUndecided</key>
 			<false/>
 			<key>SelectionEndColumn</key>

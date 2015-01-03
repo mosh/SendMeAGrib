@@ -25,6 +25,8 @@ type
     method Build:Email;
     property SelectedAnimation:Animation;
     property Region:String;
+    property &Repeat:Boolean;
+    property RepeatTime:Integer;
   end;
 
 implementation

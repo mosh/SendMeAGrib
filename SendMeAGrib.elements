@@ -72,6 +72,7 @@
         <Compile Include="Settings.pas"/>
         <Compile Include="IPoppedUpViewController.pas"/>
         <Compile Include="AnimationSelection.pas"/>
+        <Compile Include="IntegerFieldFormatter.pas"/>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.Nougat.targets"/>
 </Project>
