@@ -4,6 +4,12 @@
 <dict>
 	<key>DebuggerSplitterCollapsed</key>
 	<false/>
+	<key>FolderExpanded_SendMeAGrib_/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements---References</key>
+	<true/>
+	<key>FolderExpanded_SendMeAGrib_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/</key>
+	<true/>
+	<key>FolderExpanded_SendMeAGrib_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</key>
+	<true/>
 	<key>FolderExpanded_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/</key>
 	<true/>
 	<key>FolderExpanded_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</key>
@@ -17,9 +23,32 @@
 	<key>Properties</key>
 	<dict/>
 	<key>SelectedNode</key>
-	<string>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</string>
+	<string>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</string>
 	<key>ViewMetaData</key>
 	<dict>
+		<key>file:///Applications/Fire.app/Contents/Resources/Mono/lib/mono/4.5/Microsoft.Common.targets</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>0</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>11377</real>
+			<key>SelectionCursorUndecided</key>
+			<false/>
+			<key>SelectionEndColumn</key>
+			<integer>0</integer>
+			<key>SelectionEndLine</key>
+			<integer>0</integer>
+			<key>SelectionIsLinear</key>
+			<false/>
+			<key>SelectionStartColumn</key>
+			<integer>0</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Animation.pas</key>
 		<dict>
 			<key>CursorX</key>
@@ -230,25 +259,25 @@
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/IntegerFieldFormatter.pas</key>
 		<dict>
 			<key>CursorX</key>
-			<integer>13</integer>
+			<integer>58</integer>
 			<key>CursorY</key>
-			<integer>9</integer>
+			<integer>31</integer>
 			<key>ScrollX</key>
-			<real>6</real>
-			<key>ScrollY</key>
 			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>343</real>
 			<key>SelectionCursorUndecided</key>
 			<true/>
 			<key>SelectionEndColumn</key>
-			<integer>23</integer>
+			<integer>-1</integer>
 			<key>SelectionEndLine</key>
-			<integer>9</integer>
+			<integer>-1</integer>
 			<key>SelectionIsLinear</key>
 			<true/>
 			<key>SelectionStartColumn</key>
-			<integer>2</integer>
+			<integer>-1</integer>
 			<key>SelectionStartLine</key>
-			<integer>9</integer>
+			<integer>-1</integer>
 		</dict>
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Keys.pas</key>
 		<dict>
@@ -299,13 +328,13 @@
 		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</key>
 		<dict>
 			<key>CursorX</key>
-			<integer>40</integer>
+			<integer>8</integer>
 			<key>CursorY</key>
-			<integer>72</integer>
+			<integer>218</integer>
 			<key>ScrollX</key>
 			<real>0.0</real>
 			<key>ScrollY</key>
-			<real>1039</real>
+			<real>3300</real>
 			<key>SelectionCursorUndecided</key>
 			<false/>
 			<key>SelectionEndColumn</key>
@@ -348,6 +377,190 @@
 			<integer>0</integer>
 			<key>CursorY</key>
 			<integer>8</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>0.0</real>
+			<key>SelectionCursorUndecided</key>
+			<false/>
+			<key>SelectionEndColumn</key>
+			<integer>0</integer>
+			<key>SelectionEndLine</key>
+			<integer>0</integer>
+			<key>SelectionIsLinear</key>
+			<false/>
+			<key>SelectionStartColumn</key>
+			<integer>0</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/AppDelegate.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>5</integer>
+			<key>CursorY</key>
+			<integer>21</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>1</real>
+			<key>SelectionCursorUndecided</key>
+			<true/>
+			<key>SelectionEndColumn</key>
+			<integer>-1</integer>
+			<key>SelectionEndLine</key>
+			<integer>-1</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>-1</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/GMNEmailBuilder.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>5</integer>
+			<key>CursorY</key>
+			<integer>69</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>844</real>
+			<key>SelectionCursorUndecided</key>
+			<true/>
+			<key>SelectionEndColumn</key>
+			<integer>-1</integer>
+			<key>SelectionEndLine</key>
+			<integer>-1</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>-1</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/IPoppedUpViewController.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>0</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>0.0</real>
+			<key>SelectionCursorUndecided</key>
+			<false/>
+			<key>SelectionEndColumn</key>
+			<integer>0</integer>
+			<key>SelectionEndLine</key>
+			<integer>0</integer>
+			<key>SelectionIsLinear</key>
+			<false/>
+			<key>SelectionStartColumn</key>
+			<integer>0</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/IntegerFieldFormatter.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>21</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>180</real>
+			<key>SelectionCursorUndecided</key>
+			<false/>
+			<key>SelectionEndColumn</key>
+			<integer>0</integer>
+			<key>SelectionEndLine</key>
+			<integer>0</integer>
+			<key>SelectionIsLinear</key>
+			<false/>
+			<key>SelectionStartColumn</key>
+			<integer>0</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Mailer.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>22</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>191</real>
+			<key>SelectionCursorUndecided</key>
+			<true/>
+			<key>SelectionEndColumn</key>
+			<integer>-1</integer>
+			<key>SelectionEndLine</key>
+			<integer>-1</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>-1</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>179</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>2447</real>
+			<key>SelectionCursorUndecided</key>
+			<false/>
+			<key>SelectionEndColumn</key>
+			<integer>-1</integer>
+			<key>SelectionEndLine</key>
+			<integer>-1</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>-1</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Program.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>12</integer>
+			<key>ScrollX</key>
+			<real>0.0</real>
+			<key>ScrollY</key>
+			<real>0.0</real>
+			<key>SelectionCursorUndecided</key>
+			<true/>
+			<key>SelectionEndColumn</key>
+			<integer>-1</integer>
+			<key>SelectionEndLine</key>
+			<integer>-1</integer>
+			<key>SelectionIsLinear</key>
+			<true/>
+			<key>SelectionStartColumn</key>
+			<integer>-1</integer>
+			<key>SelectionStartLine</key>
+			<integer>-1</integer>
+		</dict>
+		<key>file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib.elements_file:///Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Settings.pas</key>
+		<dict>
+			<key>CursorX</key>
+			<integer>0</integer>
+			<key>CursorY</key>
+			<integer>14</integer>
 			<key>ScrollX</key>
 			<real>0.0</real>
 			<key>ScrollY</key>
@@ -505,12 +718,12 @@
 		</dict>
 	</dict>
 	<key>Window_Height</key>
-	<real>905</real>
+	<real>910</real>
 	<key>Window_Width</key>
 	<real>1629</real>
 	<key>Window_X</key>
-	<real>112</real>
+	<real>57</real>
 	<key>Window_Y</key>
-	<real>126</real>
+	<real>131</real>
 </dict>
 </plist>

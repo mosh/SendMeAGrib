@@ -1,78 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
-    <PropertyGroup>
-        <RootNamespace>SendMeAGrib</RootNamespace>
-        <ProjectGuid>573B6002-0F9E-47A4-ADEC-CAB6EEC561B3</ProjectGuid>
-        <OutputType>executable</OutputType>
-        <AssemblyName>SendMeAGrib</AssemblyName>
-        <AllowGlobals>False</AllowGlobals>
-        <AllowLegacyWith>False</AllowLegacyWith>
-        <AllowLegacyOutParams>False</AllowLegacyOutParams>
-        <AllowLegacyCreate>False</AllowLegacyCreate>
-        <AllowUnsafeCode>False</AllowUnsafeCode>
-        <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
-        <SDK>OS X</SDK>
-        <CreateAppBundle>True</CreateAppBundle>
-        <InfoPListFile>.\Resources\Info.plist</InfoPListFile>
-        <EntitlementsFile>Resources\Entitlements.entitlements</EntitlementsFile>
-        <MacIconFile>.\Resources\App.icns</MacIconFile>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <Optimize>false</Optimize>
-        <OutputPath>.\bin\Debug</OutputPath>
-        <DefineConstants>DEBUG;TRACE;</DefineConstants>
-        <GenerateDebugInfo>True</GenerateDebugInfo>
-        <EnableAsserts>True</EnableAsserts>
-        <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
-        <CaptureConsoleOutput>False</CaptureConsoleOutput>
-        <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-        <Optimize>False</Optimize>
-        <OutputPath>.\bin\Release</OutputPath>
-        <GenerateDebugInfo>False</GenerateDebugInfo>
-        <EnableAsserts>False</EnableAsserts>
-        <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
-        <CaptureConsoleOutput>False</CaptureConsoleOutput>
-        <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
-    </PropertyGroup>
-    <ItemGroup>
-        <Reference Include="Cocoa.fx"/>
-        <Reference Include="rtl.fx"/>
-        <Reference Include="libNougat.fx"/>
-        <Reference Include="libMailCore">
-            <HintPath>FX\libMailCore\OS X\libMailCore.fx</HintPath>
-        </Reference>
-        <Reference Include="Security.fx"/>
-        <Reference Include="libSugar.fx"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="AppDelegate.pas"/>
-        <Compile Include="MainWindowController.pas"/>
-        <Compile Include="Program.pas"/>
-        <None Include="Resources\Entitlements.entitlements"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Folder Include="Properties\"/>
-        <Folder Include="Resources"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="Resources\Info.plist"/>
-        <Content Include="Resources\App.icns"/>
-        <Xib Include="MainWindowController.xib">
-            <DependentUpon>MainWindowController.pas</DependentUpon>
-        </Xib>
-        <Xib Include="Resources\MainMenu.xib"/>
-        <Compile Include="GMNEmailBuilder.pas"/>
-        <Compile Include="Mailer.pas"/>
-        <Compile Include="SettingsViewController.pas"/>
-        <Xib Include="SettingsViewController.xib"/>
-        <Compile Include="Keys.pas"/>
-        <Compile Include="IParentController.pas"/>
-        <Compile Include="Settings.pas"/>
-        <Compile Include="IPoppedUpViewController.pas"/>
-        <Compile Include="AnimationSelection.pas"/>
-        <Compile Include="IntegerFieldFormatter.pas"/>
-    </ItemGroup>
-    <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.Nougat.targets"/>
+  <PropertyGroup>
+    <RootNamespace>SendMeAGrib</RootNamespace>
+    <ProjectGuid>573B6002-0F9E-47A4-ADEC-CAB6EEC561B3</ProjectGuid>
+    <OutputType>executable</OutputType>
+    <AssemblyName>SendMeAGrib</AssemblyName>
+    <AllowGlobals>False</AllowGlobals>
+    <AllowLegacyWith>False</AllowLegacyWith>
+    <AllowLegacyOutParams>False</AllowLegacyOutParams>
+    <AllowLegacyCreate>False</AllowLegacyCreate>
+    <AllowUnsafeCode>False</AllowUnsafeCode>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <SDK>OS X</SDK>
+    <CreateAppBundle>True</CreateAppBundle>
+    <InfoPListFile>.\Resources\Info.plist</InfoPListFile>
+    <EntitlementsFile>Resources\Entitlements.entitlements</EntitlementsFile>
+    <MacIconFile>.\Resources\App.icns</MacIconFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+    <GenerateDebugInfo>True</GenerateDebugInfo>
+    <EnableAsserts>True</EnableAsserts>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <CaptureConsoleOutput>False</CaptureConsoleOutput>
+    <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Optimize>False</Optimize>
+    <OutputPath>.\bin\Release</OutputPath>
+    <GenerateDebugInfo>False</GenerateDebugInfo>
+    <EnableAsserts>False</EnableAsserts>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <CaptureConsoleOutput>False</CaptureConsoleOutput>
+    <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cocoa.fx" />
+    <Reference Include="libxml2.fx">
+      <HintPath>C:\Program Files\RemObjects Software\Oxygene\Nougat\Libraries\libxml2\OS X\libxml2.fx</HintPath>
+    </Reference>
+    <Reference Include="rtl.fx" />
+    <Reference Include="libNougat.fx" />
+    <Reference Include="libMailCore">
+      <HintPath>FX\libMailCore\OS X\libMailCore.fx</HintPath>
+    </Reference>
+    <Reference Include="Security.fx" />
+    <Reference Include="libSugar.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.pas" />
+    <Compile Include="MainWindowController.pas" />
+    <Compile Include="Program.pas" />
+    <None Include="Resources\Entitlements.entitlements" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Info.plist" />
+    <Content Include="Resources\App.icns" />
+    <Xib Include="MainWindowController.xib">
+      <DependentUpon>MainWindowController.pas</DependentUpon>
+    </Xib>
+    <Xib Include="Resources\MainMenu.xib" />
+    <Compile Include="GMNEmailBuilder.pas" />
+    <Compile Include="Mailer.pas" />
+    <Compile Include="SettingsViewController.pas" />
+    <Xib Include="SettingsViewController.xib" />
+    <Compile Include="Keys.pas" />
+    <Compile Include="IParentController.pas" />
+    <Compile Include="Settings.pas" />
+    <Compile Include="IPoppedUpViewController.pas" />
+    <Compile Include="AnimationSelection.pas" />
+    <Compile Include="IntegerFieldFormatter.pas" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.Nougat.targets" />
 </Project>

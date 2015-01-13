@@ -26,7 +26,9 @@ type
     property SelectedAnimation:Animation;
     property Region:String;
     property &Repeat:Boolean;
-    property RepeatTime:Integer;
+    property RepeatTimes:Integer;
+    property Times:Boolean;
+    property TimesOfForecast:String;
   end;
 
 implementation
@@ -47,14 +49,31 @@ begin
 
   var built := new Email;
   
-  var subject := Region;
+  var subject := '';
   
-  case SelectedAnimation of
-    Animation.OneDay: subject := subject + ' 1day';
-    Animation.TwoDay: subject := subject + ' 2day';
-    Animation.ThreeDay: subject := subject + ' 3day';
-    Animation.FourDay: subject := subject + ' 4day';
-    Animation.FiveDay: subject := subject + ' 5day';
+  if(self.Repeat)then
+  begin
+    subject := NSString.stringWithFormat('%dtimes ',self.RepeatTimes);
+  end;
+  
+  subject := subject + Region;
+  
+  if(SelectedAnimation <> Animation.None)then
+  begin
+    case SelectedAnimation of
+      Animation.OneDay: subject := subject + ' 1day';
+      Animation.TwoDay: subject := subject + ' 2day';
+      Animation.ThreeDay: subject := subject + ' 3day';
+      Animation.FourDay: subject := subject + ' 4day';
+      Animation.FiveDay: subject := subject + ' 5day';
+    end;
+  end
+  else
+  begin
+    if(Times)then
+    begin
+      subject := NSString.stringWithFormat('%@ %@',subject,self.TimesOfForecast);
+    end;
   end;
   
   built.Subject := subject;

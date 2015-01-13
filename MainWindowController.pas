@@ -17,8 +17,12 @@ type
       _settings:Settings;
       method bindPopup(popupButton:NSPopUpButton;arrayController:NSArrayController;displayField:String);
       method bindMatrix(matrix:NSMatrix;arrayController:NSArrayController;displayField:String);
+      method bindTextField(textfield:NSTextField; object:NSObject;  keyPath:String);
+
       method popoverWillShow(notification: Foundation.NSNotification);
       _animationSelections:NSMutableArray<AnimationSelection>;
+      
+      method BuildOutputValue:String;
       
   protected
   public
@@ -36,14 +40,23 @@ type
     [IBOutlet]property numberOfDays:weak NSMatrix;
     [IBOutlet]property timesTextField:weak NSTextField;
     [IBOutlet]property KeyPopupButton:weak NSPopUpButton;
+    [IBOutlet]property outputValueTextField:weak NSTextField;
     
     [IBAction]method doSettings(sender:id);
     [IBAction]method sendMail(sender:id);
     [IBAction]method cancelRequest(sender:id);
+    [IBAction]method transformOutputValue(sender:id);
 
     property UseAnimation:Boolean;
     property UseAutomaticSchedule:Boolean;
     property UseTimeOfForecast:Boolean;
+    
+    property RepeatTimes:Integer;
+    
+    property Interval:Integer;
+    property Start:Integer;
+    property OutputValue:String;
+    property NumberOfForecasts:Integer;
   end;
 
 implementation
@@ -54,6 +67,10 @@ begin
   if assigned(self) then 
   begin
     // Custom initialization
+    self.Interval := 6;
+    self.Start := 6;
+    self.NumberOfForecasts := 6;
+    
     self._settings := new Settings;
     _animationSelections := new NSMutableArray<AnimationSelection>;
     _animationSelections.addObject(new OneDay);
@@ -68,6 +85,8 @@ end;
 method MainWindowController.windowDidLoad;
 begin
   inherited windowDidLoad();
+  
+  transformOutputValue(self);
   
   var formatter := new IntegerFieldFormatter withMaximumLength(5);
   timesTextField.formatter := formatter;
@@ -100,14 +119,14 @@ begin
   self.KeysArrayController.content := Keys.SystemKeys;
   self.AnimationSelectionsArrayController.content:= self._animationSelections;
   
-  bindPopup(KeyPopupButton, KeysArrayController, 'Description');
-  bindMatrix(numberOfDays, AnimationSelectionsArrayController, 'Description');
+  bindPopup(KeyPopupButton, KeysArrayController, 'self.Description');
+  bindMatrix(numberOfDays, AnimationSelectionsArrayController, 'self.Description');
+  bindTextField(self.outputValueTextField,self,'self.OutputValue');
   
   
   self.settingsPopover.contentViewController := new SettingsViewController;
   self.settingsPopover.&delegate := self;
-  (self.settingsPopover.contentViewController as SettingsViewController).ParentController := self;
-  
+  (self.settingsPopover.contentViewController as SettingsViewController).ParentController := self;  
 
   if(
     (String.IsNullOrEmpty(_settings.Host)) or
@@ -143,18 +162,30 @@ begin
     
     if(self.UseAutomaticSchedule)then
     begin
+      builder.Repeat := true;
+      builder.RepeatTimes := self.RepeatTimes;
     end;
     
     if(self.UseTimeOfForecast)then
     begin
+      builder.Times := true;
+      builder.TimesOfForecast := self.OutputValue;
     end;
     
     var emailTo := builder.Build;
+    var mailer := new Mailer(self._settings.Host) withPort(465) withUsername(self._settings.Username) withPassword(self._settings.Password);
+    mailer.Send(emailTo);
+    
     NSLog(emailTo.Subject);
-    //var mailer := new Mailer(self._settings.Host) withPort(465) withUsername(self._settings.Username) withPassword(self._settings.Password);
-    //mailer.Send(emailTo);
+    
   end;
     
+end;
+
+method MainWindowController.transformOutputValue(sender: id); 
+begin
+  var newValue := BuildOutputValue;
+  self.setValue(newValue) forKeyPath('self.OutputValue');
 end;
 
 method MainWindowController.doSettings(sender: id);
@@ -192,6 +223,13 @@ begin
   self.settingsPopover.close;
 end;
 
+method MainWindowController.bindTextField(textfield:NSTextField; object:NSObject;  keyPath:String);
+begin
+  textfield.bind('value') toObject(object) withKeyPath(keyPath) options(nil);
+  //object.addObserver(textfield) forKeyPath(keyPath) options(0) context(nil);
+  
+end;
+
 method MainWindowController.bindPopup(popupButton:NSPopUpButton;arrayController:NSArrayController;displayField:String);
 begin
   var options := new NSDictionary;
@@ -227,5 +265,32 @@ begin
   end;
 
 end;
+
+method MainWindowController.BuildOutputValue: String;
+begin
+  var value := '';
+  var integerValue:= Start;
+  
+  for  x:Integer := 0 to NumberOfForecasts - 1 do
+  begin
+    
+    if(x > 0)then
+    begin
+      integerValue := integerValue + Interval;
+    end;
+    if(value.length=0)then
+    begin
+      value := NSString.stringWithFormat('%d',integerValue);
+    end
+    else
+    begin
+      value := NSString.stringWithFormat('%@ %d',value,integerValue);
+    end;
+    
+  end;
+  
+  exit value;
+end;
+
 
 end.
