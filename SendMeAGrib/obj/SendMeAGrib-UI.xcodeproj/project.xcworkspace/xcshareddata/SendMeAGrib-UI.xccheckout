@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>60A37CF4-AF6A-4860-A54F-1F429D782A00</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SendMeAGrib-UI</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D1DACB77B9C17CD019B1E8E141CC97F05422E619</key>
+		<string>https://github.com/mosh/SendMeAGrib.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>obj/SendMeAGrib-UI.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D1DACB77B9C17CD019B1E8E141CC97F05422E619</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mosh/SendMeAGrib.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D1DACB77B9C17CD019B1E8E141CC97F05422E619</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D1DACB77B9C17CD019B1E8E141CC97F05422E619</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SendMeAGrib</string>
+		</dict>
+	</array>
+</dict>
+</plist>
