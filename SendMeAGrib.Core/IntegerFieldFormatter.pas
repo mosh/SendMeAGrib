@@ -12,7 +12,9 @@ type
   protected
   public
     method isPartialStringValid(var partialStringPtr: Foundation.NSString) proposedSelectedRange(proposedSelRangePtr: Foundation.NSRangePointer) originalString(origString: Foundation.NSString) originalSelectedRange(origSelRange: Foundation.NSRange) errorDescription(var error: Foundation.NSString): rtl.BOOL; override;
+    
     method initWithMaximumLength(length:Integer):id;
+    
     property MaximumLength:Integer;
   
   end;
