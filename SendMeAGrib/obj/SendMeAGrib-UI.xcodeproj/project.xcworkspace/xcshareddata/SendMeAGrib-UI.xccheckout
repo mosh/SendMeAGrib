@@ -14,11 +14,11 @@
 		<string>https://github.com/mosh/SendMeAGrib.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>obj/SendMeAGrib-UI.xcodeproj</string>
+	<string>SendMeAGrib/obj/SendMeAGrib-UI.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D1DACB77B9C17CD019B1E8E141CC97F05422E619</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mosh/SendMeAGrib.git</string>

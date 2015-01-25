@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+    <PropertyGroup>
+        <RootNamespace>SendMeAGribIOS</RootNamespace>
+        <ProjectGuid>D709834B-D4B2-42D8-8614-E33D2ABB4250</ProjectGuid>
+        <OutputType>executable</OutputType>
+        <AssemblyName>SendMeAGribIOS</AssemblyName>
+        <AllowGlobals>False</AllowGlobals>
+        <AllowLegacyWith>False</AllowLegacyWith>
+        <AllowLegacyOutParams>False</AllowLegacyOutParams>
+        <AllowLegacyCreate>False</AllowLegacyCreate>
+        <AllowUnsafeCode>False</AllowUnsafeCode>
+        <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+        <SDK>iOS</SDK>
+        <CreateAppBundle>True</CreateAppBundle>
+        <InfoPListFile>.\Resources\Info.plist</InfoPListFile>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <Optimize>false</Optimize>
+        <OutputPath>.\bin\Debug</OutputPath>
+        <DefineConstants>DEBUG;TRACE;</DefineConstants>
+        <GenerateDebugInfo>True</GenerateDebugInfo>
+        <EnableAsserts>True</EnableAsserts>
+        <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+        <CaptureConsoleOutput>False</CaptureConsoleOutput>
+        <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <Optimize>true</Optimize>
+        <OutputPath>.\bin\Release</OutputPath>
+        <GenerateDebugInfo>True</GenerateDebugInfo>
+        <GenerateDSym>True</GenerateDSym>
+        <EnableAsserts>False</EnableAsserts>
+        <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+        <CaptureConsoleOutput>False</CaptureConsoleOutput>
+        <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
+        <CreateIPA>True</CreateIPA>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="CoreGraphics.fx"/>
+        <Reference Include="Foundation.fx"/>
+        <Reference Include="UIKit.fx"/>
+        <Reference Include="rtl.fx"/>
+        <Reference Include="CFNetwork.fx"/>
+        <Reference Include="Security.fx"/>
+        <Reference Include="libMailCore-ios">
+            <HintPath>..\FX\libMailCore-ios\IOS Simulator\libMailCore-ios.fx</HintPath>
+        </Reference>
+        <Reference Include="libNougat.fx"/>
+        <Reference Include="libSugar.fx"/>
+        <Reference Include="libxml2.fx"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="AppDelegate.pas"/>
+        <Compile Include="FlipsideViewController.pas"/>
+        <Compile Include="MainViewController.pas"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Resources\Info.plist"/>
+        <Storyboard Include="Resources\MainStoryboard~iPad.storyboard"/>
+        <Storyboard Include="Resources\MainStoryboard~iPhone.storyboard"/>
+        <AssetCatalog Include="Resources\Images.xcassets">
+            <AppIcon>AppIcon</AppIcon>
+        </AssetCatalog>
+        <Xib Include="Resources\LaunchScreen.xib"/>
+        <Compile Include="AnimationTableViewController.pas"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Properties\"/>
+        <Folder Include="Resources\"/>
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)/RemObjects Software/Oxygene/RemObjects.Oxygene.Nougat.targets"/>
+    <Import Project="../SendMeAGrib.Core/SendMeAGrib.Core.projitems" Label="Shared"/>
+</Project>

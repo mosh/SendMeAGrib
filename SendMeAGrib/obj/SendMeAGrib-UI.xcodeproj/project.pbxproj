@@ -7,150 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ECCB0000000000000000052D /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000052D /* Cocoa.framework */; };
-		ECCB0000000000000000052E /* libxml2.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000052E /* libxml2.framework */; };
-		ECCB0000000000000000052F /* rtl.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000052F /* rtl.framework */; };
-		ECCB00000000000000000530 /* Nougat.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000530 /* Nougat.framework */; };
-		ECCB00000000000000000531 /* libMailCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000531 /* libMailCore.framework */; };
-		ECCB00000000000000000532 /* Security.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000532 /* Security.framework */; };
-		ECCB00000000000000000533 /* Sugar.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000533 /* Sugar.framework */; };
-		ECCB00000000000000000534 /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000534 /* Foundation.framework */; };
-		ECCB00000000000000000535 /* CoreGraphics.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000535 /* CoreGraphics.framework */; };
-		ECCB00000000000000000536 /* IOSurface.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000536 /* IOSurface.framework */; };
-		ECCB00000000000000000537 /* AppKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000537 /* AppKit.framework */; };
-		ECCB00000000000000000538 /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000538 /* QuartzCore.framework */; };
-		ECCB00000000000000000539 /* CoreData.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000539 /* CoreData.framework */; };
-		ECCB0000000000000000053A /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000053A /* IOKit.framework */; };
-		ECCB0000000000000000053B /* Tcl.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000053B /* Tcl.framework */; };
-		ECCB0000000000000000053C /* CoreFoundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000053C /* CoreFoundation.framework */; };
-		ECCB0000000000000000053D /* CoreServices.CarbonCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000053D /* CoreServices.CarbonCore.framework */; };
-		ECCB0000000000000000053E /* DiskArbitration.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000053E /* DiskArbitration.framework */; };
-		ECCB0000000000000000053F /* CoreServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000053F /* CoreServices.framework */; };
-		ECCB00000000000000000540 /* CoreServices.FSEvents.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000540 /* CoreServices.FSEvents.framework */; };
-		ECCB00000000000000000541 /* CoreServices.SearchKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000541 /* CoreServices.SearchKit.framework */; };
-		ECCB00000000000000000542 /* CoreServices.Metadata.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000542 /* CoreServices.Metadata.framework */; };
-		ECCB00000000000000000543 /* CoreServices.DictionaryServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000543 /* CoreServices.DictionaryServices.framework */; };
-		ECCB00000000000000000544 /* CFNetwork.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000544 /* CFNetwork.framework */; };
-		ECCB00000000000000000545 /* ApplicationServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000545 /* ApplicationServices.framework */; };
-		ECCB00000000000000000546 /* ApplicationServices.HIServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000546 /* ApplicationServices.HIServices.framework */; };
-		ECCB00000000000000000547 /* ApplicationServices.SpeechSynthesis.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000547 /* ApplicationServices.SpeechSynthesis.framework */; };
-		ECCB00000000000000000548 /* ApplicationServices.QD.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000548 /* ApplicationServices.QD.framework */; };
-		ECCB00000000000000000549 /* ApplicationServices.PrintCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000549 /* ApplicationServices.PrintCore.framework */; };
-		ECCB0000000000000000054A /* ApplicationServices.LangAnalysis.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000054A /* ApplicationServices.LangAnalysis.framework */; };
-		ECCB0000000000000000054B /* ImageIO.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000054B /* ImageIO.framework */; };
-		ECCB0000000000000000054C /* CoreText.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000054C /* CoreText.framework */; };
-		ECCB0000000000000000054D /* ApplicationServices.ColorSync.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000054D /* ApplicationServices.ColorSync.framework */; };
-		ECCB0000000000000000054E /* ApplicationServices.ATS.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000054E /* ApplicationServices.ATS.framework */; };
-		ECCB0000000000000000054F /* CoreServices.AE.framework */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000054F /* CoreServices.AE.framework */; };
-		ECCB00000000000000000550 /* OpenGL.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000550 /* OpenGL.framework */; };
-		ECCB00000000000000000551 /* QuartzCore.CoreImage.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000551 /* QuartzCore.CoreImage.framework */; };
-		ECCB00000000000000000552 /* CoreServices.LaunchServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000552 /* CoreServices.LaunchServices.framework */; };
-		ECCB00000000000000000553 /* CoreVideo.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000553 /* CoreVideo.framework */; };
-		ECCB00000000000000000554 /* QTKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000554 /* QTKit.framework */; };
-		ECCB00000000000000000555 /* CoreAudio.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000555 /* CoreAudio.framework */; };
-		ECCB00000000000000000556 /* CoreServices.OSServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000556 /* CoreServices.OSServices.framework */; };
-		ECCB00000000000000000557 /* MainWindowController.xib */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000557 /* MainWindowController.xib */; };
-		ECCB00000000000000000558 /* MainMenu.xib */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000558 /* MainMenu.xib */; };
-		ECCB00000000000000000559 /* SettingsViewController.xib */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000559 /* SettingsViewController.xib */; };
+		ECCB00000000000000000A1A /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A1A /* Cocoa.framework */; };
+		ECCB00000000000000000A1B /* libxml2.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A1B /* libxml2.framework */; };
+		ECCB00000000000000000A1C /* rtl.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A1C /* rtl.framework */; };
+		ECCB00000000000000000A1D /* Nougat.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A1D /* Nougat.framework */; };
+		ECCB00000000000000000A1E /* Security.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A1E /* Security.framework */; };
+		ECCB00000000000000000A1F /* Sugar.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A1F /* Sugar.framework */; };
+		ECCB00000000000000000A20 /* libMailCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A20 /* libMailCore.framework */; };
+		ECCB00000000000000000A21 /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A21 /* Foundation.framework */; };
+		ECCB00000000000000000A22 /* CoreGraphics.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A22 /* CoreGraphics.framework */; };
+		ECCB00000000000000000A23 /* IOSurface.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A23 /* IOSurface.framework */; };
+		ECCB00000000000000000A24 /* AppKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A24 /* AppKit.framework */; };
+		ECCB00000000000000000A25 /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A25 /* QuartzCore.framework */; };
+		ECCB00000000000000000A26 /* CoreData.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A26 /* CoreData.framework */; };
+		ECCB00000000000000000A27 /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A27 /* IOKit.framework */; };
+		ECCB00000000000000000A28 /* Tcl.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A28 /* Tcl.framework */; };
+		ECCB00000000000000000A29 /* CoreFoundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A29 /* CoreFoundation.framework */; };
+		ECCB00000000000000000A2A /* CoreServices.CarbonCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A2A /* CoreServices.CarbonCore.framework */; };
+		ECCB00000000000000000A2B /* DiskArbitration.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A2B /* DiskArbitration.framework */; };
+		ECCB00000000000000000A2C /* CoreServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A2C /* CoreServices.framework */; };
+		ECCB00000000000000000A2D /* CoreServices.FSEvents.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A2D /* CoreServices.FSEvents.framework */; };
+		ECCB00000000000000000A2E /* CoreServices.SearchKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A2E /* CoreServices.SearchKit.framework */; };
+		ECCB00000000000000000A2F /* CoreServices.Metadata.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A2F /* CoreServices.Metadata.framework */; };
+		ECCB00000000000000000A30 /* CoreServices.DictionaryServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A30 /* CoreServices.DictionaryServices.framework */; };
+		ECCB00000000000000000A31 /* CFNetwork.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A31 /* CFNetwork.framework */; };
+		ECCB00000000000000000A32 /* ApplicationServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A32 /* ApplicationServices.framework */; };
+		ECCB00000000000000000A33 /* ApplicationServices.HIServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A33 /* ApplicationServices.HIServices.framework */; };
+		ECCB00000000000000000A34 /* ApplicationServices.SpeechSynthesis.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A34 /* ApplicationServices.SpeechSynthesis.framework */; };
+		ECCB00000000000000000A35 /* ApplicationServices.QD.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A35 /* ApplicationServices.QD.framework */; };
+		ECCB00000000000000000A36 /* ApplicationServices.PrintCore.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A36 /* ApplicationServices.PrintCore.framework */; };
+		ECCB00000000000000000A37 /* ApplicationServices.LangAnalysis.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A37 /* ApplicationServices.LangAnalysis.framework */; };
+		ECCB00000000000000000A38 /* ImageIO.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A38 /* ImageIO.framework */; };
+		ECCB00000000000000000A39 /* CoreText.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A39 /* CoreText.framework */; };
+		ECCB00000000000000000A3A /* ApplicationServices.ColorSync.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A3A /* ApplicationServices.ColorSync.framework */; };
+		ECCB00000000000000000A3B /* ApplicationServices.ATS.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A3B /* ApplicationServices.ATS.framework */; };
+		ECCB00000000000000000A3C /* CoreServices.AE.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A3C /* CoreServices.AE.framework */; };
+		ECCB00000000000000000A3D /* OpenGL.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A3D /* OpenGL.framework */; };
+		ECCB00000000000000000A3E /* QuartzCore.CoreImage.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A3E /* QuartzCore.CoreImage.framework */; };
+		ECCB00000000000000000A3F /* CoreServices.LaunchServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A3F /* CoreServices.LaunchServices.framework */; };
+		ECCB00000000000000000A40 /* CoreVideo.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A40 /* CoreVideo.framework */; };
+		ECCB00000000000000000A41 /* QTKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A41 /* QTKit.framework */; };
+		ECCB00000000000000000A42 /* CoreAudio.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A42 /* CoreAudio.framework */; };
+		ECCB00000000000000000A43 /* CoreServices.OSServices.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A43 /* CoreServices.OSServices.framework */; };
+		ECCB00000000000000000A44 /* MainWindowController.xib */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A44 /* MainWindowController.xib */; };
+		ECCB00000000000000000A45 /* MainMenu.xib */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A45 /* MainMenu.xib */; };
+		ECCB00000000000000000A46 /* SettingsViewController.xib */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000A46 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ECCB0000000000000000055C /* SendMeAGrib-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SendMeAGrib-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECCB0000000000000000052D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000052E /* libxml2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libxml2.framework; path = "System/Library/Frameworks/libxml2.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000052F /* rtl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rtl.framework; path = "System/Library/Frameworks/rtl.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000530 /* Nougat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nougat.framework; path = "System/Library/Frameworks/Nougat.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000531 /* libMailCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libMailCore.framework; path = "System/Library/Frameworks/libMailCore.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000532 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000533 /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = "System/Library/Frameworks/Sugar.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000534 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000535 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000536 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = "System/Library/Frameworks/IOSurface.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000537 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000538 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000539 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = "System/Library/Frameworks/CoreData.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000053A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = "System/Library/Frameworks/IOKit.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000053B /* Tcl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tcl.framework; path = "System/Library/Frameworks/Tcl.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000053C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000053D /* CoreServices.CarbonCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.CarbonCore.framework; path = "System/Library/Frameworks/CoreServices.CarbonCore.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000053E /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = "System/Library/Frameworks/DiskArbitration.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000053F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000540 /* CoreServices.FSEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.FSEvents.framework; path = "System/Library/Frameworks/CoreServices.FSEvents.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000541 /* CoreServices.SearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.SearchKit.framework; path = "System/Library/Frameworks/CoreServices.SearchKit.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000542 /* CoreServices.Metadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.Metadata.framework; path = "System/Library/Frameworks/CoreServices.Metadata.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000543 /* CoreServices.DictionaryServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.DictionaryServices.framework; path = "System/Library/Frameworks/CoreServices.DictionaryServices.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000544 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = "System/Library/Frameworks/CFNetwork.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000545 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = "System/Library/Frameworks/ApplicationServices.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000546 /* ApplicationServices.HIServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.HIServices.framework; path = "System/Library/Frameworks/ApplicationServices.HIServices.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000547 /* ApplicationServices.SpeechSynthesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.SpeechSynthesis.framework; path = "System/Library/Frameworks/ApplicationServices.SpeechSynthesis.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000548 /* ApplicationServices.QD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.QD.framework; path = "System/Library/Frameworks/ApplicationServices.QD.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000549 /* ApplicationServices.PrintCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.PrintCore.framework; path = "System/Library/Frameworks/ApplicationServices.PrintCore.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000054A /* ApplicationServices.LangAnalysis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.LangAnalysis.framework; path = "System/Library/Frameworks/ApplicationServices.LangAnalysis.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000054B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000054C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000054D /* ApplicationServices.ColorSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.ColorSync.framework; path = "System/Library/Frameworks/ApplicationServices.ColorSync.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000054E /* ApplicationServices.ATS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.ATS.framework; path = "System/Library/Frameworks/ApplicationServices.ATS.framework"; sourceTree = SDKROOT; };
-		ECCB0000000000000000054F /* CoreServices.AE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.AE.framework; path = "System/Library/Frameworks/CoreServices.AE.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000550 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000551 /* QuartzCore.CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.CoreImage.framework; path = "System/Library/Frameworks/QuartzCore.CoreImage.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000552 /* CoreServices.LaunchServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.LaunchServices.framework; path = "System/Library/Frameworks/CoreServices.LaunchServices.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000553 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000554 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = "System/Library/Frameworks/QTKit.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000555 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = "System/Library/Frameworks/CoreAudio.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000556 /* CoreServices.OSServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.OSServices.framework; path = "System/Library/Frameworks/CoreServices.OSServices.framework"; sourceTree = SDKROOT; };
-		ECCB00000000000000000557 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindowController.xib"; path = "/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/MainWindowController.xib"; sourceTree = SOURCE_ROOT; };
-		ECCB00000000000000000558 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainMenu.xib"; path = "/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/Resources/MainMenu.xib"; sourceTree = SOURCE_ROOT; };
-		ECCB00000000000000000559 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "SettingsViewController.xib"; path = "/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SettingsViewController.xib"; sourceTree = SOURCE_ROOT; };
-		ECCB0000000000000000055A /* Classes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; includeInIndex = 0; name = "Classes.h"; path = "SendMeAGrib-UI.xcodeproj/Classes.h"; sourceTree = "<group>"; };
-		ECCB0000000000000000055B /* Classes.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; includeInIndex = 0; name = "Classes.m"; path = "SendMeAGrib-UI.xcodeproj/Classes.m"; sourceTree = "<group>"; };
+		ECCB00000000000000000A49 /* SendMeAGrib-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SendMeAGrib-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCB00000000000000000A1A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A1B /* libxml2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libxml2.framework; path = "System/Library/Frameworks/libxml2.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A1C /* rtl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rtl.framework; path = "System/Library/Frameworks/rtl.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A1D /* Nougat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nougat.framework; path = "System/Library/Frameworks/Nougat.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A1E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A1F /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = "System/Library/Frameworks/Sugar.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A20 /* libMailCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libMailCore.framework; path = "System/Library/Frameworks/libMailCore.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A23 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = "System/Library/Frameworks/IOSurface.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A24 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A25 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A26 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = "System/Library/Frameworks/CoreData.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A27 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = "System/Library/Frameworks/IOKit.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A28 /* Tcl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tcl.framework; path = "System/Library/Frameworks/Tcl.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A29 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A2A /* CoreServices.CarbonCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.CarbonCore.framework; path = "System/Library/Frameworks/CoreServices.CarbonCore.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A2B /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = "System/Library/Frameworks/DiskArbitration.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A2C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A2D /* CoreServices.FSEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.FSEvents.framework; path = "System/Library/Frameworks/CoreServices.FSEvents.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A2E /* CoreServices.SearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.SearchKit.framework; path = "System/Library/Frameworks/CoreServices.SearchKit.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A2F /* CoreServices.Metadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.Metadata.framework; path = "System/Library/Frameworks/CoreServices.Metadata.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A30 /* CoreServices.DictionaryServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.DictionaryServices.framework; path = "System/Library/Frameworks/CoreServices.DictionaryServices.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A31 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = "System/Library/Frameworks/CFNetwork.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A32 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = "System/Library/Frameworks/ApplicationServices.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A33 /* ApplicationServices.HIServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.HIServices.framework; path = "System/Library/Frameworks/ApplicationServices.HIServices.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A34 /* ApplicationServices.SpeechSynthesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.SpeechSynthesis.framework; path = "System/Library/Frameworks/ApplicationServices.SpeechSynthesis.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A35 /* ApplicationServices.QD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.QD.framework; path = "System/Library/Frameworks/ApplicationServices.QD.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A36 /* ApplicationServices.PrintCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.PrintCore.framework; path = "System/Library/Frameworks/ApplicationServices.PrintCore.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A37 /* ApplicationServices.LangAnalysis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.LangAnalysis.framework; path = "System/Library/Frameworks/ApplicationServices.LangAnalysis.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A38 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A39 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A3A /* ApplicationServices.ColorSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.ColorSync.framework; path = "System/Library/Frameworks/ApplicationServices.ColorSync.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A3B /* ApplicationServices.ATS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.ATS.framework; path = "System/Library/Frameworks/ApplicationServices.ATS.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A3C /* CoreServices.AE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.AE.framework; path = "System/Library/Frameworks/CoreServices.AE.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A3D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A3E /* QuartzCore.CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.CoreImage.framework; path = "System/Library/Frameworks/QuartzCore.CoreImage.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A3F /* CoreServices.LaunchServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.LaunchServices.framework; path = "System/Library/Frameworks/CoreServices.LaunchServices.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A40 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A41 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = "System/Library/Frameworks/QTKit.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A42 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = "System/Library/Frameworks/CoreAudio.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A43 /* CoreServices.OSServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.OSServices.framework; path = "System/Library/Frameworks/CoreServices.OSServices.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000A44 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindowController.xib"; path = "/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib/MainWindowController.xib"; sourceTree = SOURCE_ROOT; };
+		ECCB00000000000000000A45 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainMenu.xib"; path = "/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib/Resources/MainMenu.xib"; sourceTree = SOURCE_ROOT; };
+		ECCB00000000000000000A46 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "SettingsViewController.xib"; path = "/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGrib/SettingsViewController.xib"; sourceTree = SOURCE_ROOT; };
+		ECCB00000000000000000A47 /* Classes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; includeInIndex = 0; name = "Classes.h"; path = "SendMeAGrib-UI.xcodeproj/Classes.h"; sourceTree = "<group>"; };
+		ECCB00000000000000000A48 /* Classes.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; includeInIndex = 0; name = "Classes.m"; path = "SendMeAGrib-UI.xcodeproj/Classes.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 /* Begin PBXFrameworksBuildPhase section */
     EC12D20817C22C67006A4D91 /* Frameworks */ = {
       isa = PBXFrameworksBuildPhase;
       buildActionMask = 2147483647;
       files = (
-        ECCB0000000000000000052D /* Cocoa.framework */,
-        ECCB0000000000000000052E /* libxml2.framework */,
-        ECCB0000000000000000052F /* rtl.framework */,
-        ECCB00000000000000000530 /* Nougat.framework */,
-        ECCB00000000000000000531 /* libMailCore.framework */,
-        ECCB00000000000000000532 /* Security.framework */,
-        ECCB00000000000000000533 /* Sugar.framework */,
-        ECCB00000000000000000534 /* Foundation.framework */,
-        ECCB00000000000000000535 /* CoreGraphics.framework */,
-        ECCB00000000000000000536 /* IOSurface.framework */,
-        ECCB00000000000000000537 /* AppKit.framework */,
-        ECCB00000000000000000538 /* QuartzCore.framework */,
-        ECCB00000000000000000539 /* CoreData.framework */,
-        ECCB0000000000000000053A /* IOKit.framework */,
-        ECCB0000000000000000053B /* Tcl.framework */,
-        ECCB0000000000000000053C /* CoreFoundation.framework */,
-        ECCB0000000000000000053D /* CoreServices.CarbonCore.framework */,
-        ECCB0000000000000000053E /* DiskArbitration.framework */,
-        ECCB0000000000000000053F /* CoreServices.framework */,
-        ECCB00000000000000000540 /* CoreServices.FSEvents.framework */,
-        ECCB00000000000000000541 /* CoreServices.SearchKit.framework */,
-        ECCB00000000000000000542 /* CoreServices.Metadata.framework */,
-        ECCB00000000000000000543 /* CoreServices.DictionaryServices.framework */,
-        ECCB00000000000000000544 /* CFNetwork.framework */,
-        ECCB00000000000000000545 /* ApplicationServices.framework */,
-        ECCB00000000000000000546 /* ApplicationServices.HIServices.framework */,
-        ECCB00000000000000000547 /* ApplicationServices.SpeechSynthesis.framework */,
-        ECCB00000000000000000548 /* ApplicationServices.QD.framework */,
-        ECCB00000000000000000549 /* ApplicationServices.PrintCore.framework */,
-        ECCB0000000000000000054A /* ApplicationServices.LangAnalysis.framework */,
-        ECCB0000000000000000054B /* ImageIO.framework */,
-        ECCB0000000000000000054C /* CoreText.framework */,
-        ECCB0000000000000000054D /* ApplicationServices.ColorSync.framework */,
-        ECCB0000000000000000054E /* ApplicationServices.ATS.framework */,
-        ECCB0000000000000000054F /* CoreServices.AE.framework */,
-        ECCB00000000000000000550 /* OpenGL.framework */,
-        ECCB00000000000000000551 /* QuartzCore.CoreImage.framework */,
-        ECCB00000000000000000552 /* CoreServices.LaunchServices.framework */,
-        ECCB00000000000000000553 /* CoreVideo.framework */,
-        ECCB00000000000000000554 /* QTKit.framework */,
-        ECCB00000000000000000555 /* CoreAudio.framework */,
-        ECCB00000000000000000556 /* CoreServices.OSServices.framework */,
+        ECCB00000000000000000A1A /* Cocoa.framework */,
+        ECCB00000000000000000A1B /* libxml2.framework */,
+        ECCB00000000000000000A1C /* rtl.framework */,
+        ECCB00000000000000000A1D /* Nougat.framework */,
+        ECCB00000000000000000A1E /* Security.framework */,
+        ECCB00000000000000000A1F /* Sugar.framework */,
+        ECCB00000000000000000A20 /* libMailCore.framework */,
+        ECCB00000000000000000A21 /* Foundation.framework */,
+        ECCB00000000000000000A22 /* CoreGraphics.framework */,
+        ECCB00000000000000000A23 /* IOSurface.framework */,
+        ECCB00000000000000000A24 /* AppKit.framework */,
+        ECCB00000000000000000A25 /* QuartzCore.framework */,
+        ECCB00000000000000000A26 /* CoreData.framework */,
+        ECCB00000000000000000A27 /* IOKit.framework */,
+        ECCB00000000000000000A28 /* Tcl.framework */,
+        ECCB00000000000000000A29 /* CoreFoundation.framework */,
+        ECCB00000000000000000A2A /* CoreServices.CarbonCore.framework */,
+        ECCB00000000000000000A2B /* DiskArbitration.framework */,
+        ECCB00000000000000000A2C /* CoreServices.framework */,
+        ECCB00000000000000000A2D /* CoreServices.FSEvents.framework */,
+        ECCB00000000000000000A2E /* CoreServices.SearchKit.framework */,
+        ECCB00000000000000000A2F /* CoreServices.Metadata.framework */,
+        ECCB00000000000000000A30 /* CoreServices.DictionaryServices.framework */,
+        ECCB00000000000000000A31 /* CFNetwork.framework */,
+        ECCB00000000000000000A32 /* ApplicationServices.framework */,
+        ECCB00000000000000000A33 /* ApplicationServices.HIServices.framework */,
+        ECCB00000000000000000A34 /* ApplicationServices.SpeechSynthesis.framework */,
+        ECCB00000000000000000A35 /* ApplicationServices.QD.framework */,
+        ECCB00000000000000000A36 /* ApplicationServices.PrintCore.framework */,
+        ECCB00000000000000000A37 /* ApplicationServices.LangAnalysis.framework */,
+        ECCB00000000000000000A38 /* ImageIO.framework */,
+        ECCB00000000000000000A39 /* CoreText.framework */,
+        ECCB00000000000000000A3A /* ApplicationServices.ColorSync.framework */,
+        ECCB00000000000000000A3B /* ApplicationServices.ATS.framework */,
+        ECCB00000000000000000A3C /* CoreServices.AE.framework */,
+        ECCB00000000000000000A3D /* OpenGL.framework */,
+        ECCB00000000000000000A3E /* QuartzCore.CoreImage.framework */,
+        ECCB00000000000000000A3F /* CoreServices.LaunchServices.framework */,
+        ECCB00000000000000000A40 /* CoreVideo.framework */,
+        ECCB00000000000000000A41 /* QTKit.framework */,
+        ECCB00000000000000000A42 /* CoreAudio.framework */,
+        ECCB00000000000000000A43 /* CoreServices.OSServices.framework */,
       );
       runOnlyForDeploymentPostprocessing = 0;
     };
@@ -169,7 +169,7 @@
     EC12D20C17C22C67006A4D91 /* Products */ = {
       isa = PBXGroup;
       children = (
-        ECCB0000000000000000055C /* SendMeAGrib-UI.app */,
+        ECCB00000000000000000A49 /* SendMeAGrib-UI.app */,
       );
       name = Products;
       sourceTree = "<group>";
@@ -177,48 +177,48 @@
     EC12D20D17C22C67006A4D91 /* Frameworks */ = {
       isa = PBXGroup;
       children = (
-        ECCB0000000000000000052D /* Cocoa.framework */,
-        ECCB0000000000000000052E /* libxml2.framework */,
-        ECCB0000000000000000052F /* rtl.framework */,
-        ECCB00000000000000000530 /* Nougat.framework */,
-        ECCB00000000000000000531 /* libMailCore.framework */,
-        ECCB00000000000000000532 /* Security.framework */,
-        ECCB00000000000000000533 /* Sugar.framework */,
-        ECCB00000000000000000534 /* Foundation.framework */,
-        ECCB00000000000000000535 /* CoreGraphics.framework */,
-        ECCB00000000000000000536 /* IOSurface.framework */,
-        ECCB00000000000000000537 /* AppKit.framework */,
-        ECCB00000000000000000538 /* QuartzCore.framework */,
-        ECCB00000000000000000539 /* CoreData.framework */,
-        ECCB0000000000000000053A /* IOKit.framework */,
-        ECCB0000000000000000053B /* Tcl.framework */,
-        ECCB0000000000000000053C /* CoreFoundation.framework */,
-        ECCB0000000000000000053D /* CoreServices.CarbonCore.framework */,
-        ECCB0000000000000000053E /* DiskArbitration.framework */,
-        ECCB0000000000000000053F /* CoreServices.framework */,
-        ECCB00000000000000000540 /* CoreServices.FSEvents.framework */,
-        ECCB00000000000000000541 /* CoreServices.SearchKit.framework */,
-        ECCB00000000000000000542 /* CoreServices.Metadata.framework */,
-        ECCB00000000000000000543 /* CoreServices.DictionaryServices.framework */,
-        ECCB00000000000000000544 /* CFNetwork.framework */,
-        ECCB00000000000000000545 /* ApplicationServices.framework */,
-        ECCB00000000000000000546 /* ApplicationServices.HIServices.framework */,
-        ECCB00000000000000000547 /* ApplicationServices.SpeechSynthesis.framework */,
-        ECCB00000000000000000548 /* ApplicationServices.QD.framework */,
-        ECCB00000000000000000549 /* ApplicationServices.PrintCore.framework */,
-        ECCB0000000000000000054A /* ApplicationServices.LangAnalysis.framework */,
-        ECCB0000000000000000054B /* ImageIO.framework */,
-        ECCB0000000000000000054C /* CoreText.framework */,
-        ECCB0000000000000000054D /* ApplicationServices.ColorSync.framework */,
-        ECCB0000000000000000054E /* ApplicationServices.ATS.framework */,
-        ECCB0000000000000000054F /* CoreServices.AE.framework */,
-        ECCB00000000000000000550 /* OpenGL.framework */,
-        ECCB00000000000000000551 /* QuartzCore.CoreImage.framework */,
-        ECCB00000000000000000552 /* CoreServices.LaunchServices.framework */,
-        ECCB00000000000000000553 /* CoreVideo.framework */,
-        ECCB00000000000000000554 /* QTKit.framework */,
-        ECCB00000000000000000555 /* CoreAudio.framework */,
-        ECCB00000000000000000556 /* CoreServices.OSServices.framework */,
+        ECCB00000000000000000A1A /* Cocoa.framework */,
+        ECCB00000000000000000A1B /* libxml2.framework */,
+        ECCB00000000000000000A1C /* rtl.framework */,
+        ECCB00000000000000000A1D /* Nougat.framework */,
+        ECCB00000000000000000A1E /* Security.framework */,
+        ECCB00000000000000000A1F /* Sugar.framework */,
+        ECCB00000000000000000A20 /* libMailCore.framework */,
+        ECCB00000000000000000A21 /* Foundation.framework */,
+        ECCB00000000000000000A22 /* CoreGraphics.framework */,
+        ECCB00000000000000000A23 /* IOSurface.framework */,
+        ECCB00000000000000000A24 /* AppKit.framework */,
+        ECCB00000000000000000A25 /* QuartzCore.framework */,
+        ECCB00000000000000000A26 /* CoreData.framework */,
+        ECCB00000000000000000A27 /* IOKit.framework */,
+        ECCB00000000000000000A28 /* Tcl.framework */,
+        ECCB00000000000000000A29 /* CoreFoundation.framework */,
+        ECCB00000000000000000A2A /* CoreServices.CarbonCore.framework */,
+        ECCB00000000000000000A2B /* DiskArbitration.framework */,
+        ECCB00000000000000000A2C /* CoreServices.framework */,
+        ECCB00000000000000000A2D /* CoreServices.FSEvents.framework */,
+        ECCB00000000000000000A2E /* CoreServices.SearchKit.framework */,
+        ECCB00000000000000000A2F /* CoreServices.Metadata.framework */,
+        ECCB00000000000000000A30 /* CoreServices.DictionaryServices.framework */,
+        ECCB00000000000000000A31 /* CFNetwork.framework */,
+        ECCB00000000000000000A32 /* ApplicationServices.framework */,
+        ECCB00000000000000000A33 /* ApplicationServices.HIServices.framework */,
+        ECCB00000000000000000A34 /* ApplicationServices.SpeechSynthesis.framework */,
+        ECCB00000000000000000A35 /* ApplicationServices.QD.framework */,
+        ECCB00000000000000000A36 /* ApplicationServices.PrintCore.framework */,
+        ECCB00000000000000000A37 /* ApplicationServices.LangAnalysis.framework */,
+        ECCB00000000000000000A38 /* ImageIO.framework */,
+        ECCB00000000000000000A39 /* CoreText.framework */,
+        ECCB00000000000000000A3A /* ApplicationServices.ColorSync.framework */,
+        ECCB00000000000000000A3B /* ApplicationServices.ATS.framework */,
+        ECCB00000000000000000A3C /* CoreServices.AE.framework */,
+        ECCB00000000000000000A3D /* OpenGL.framework */,
+        ECCB00000000000000000A3E /* QuartzCore.CoreImage.framework */,
+        ECCB00000000000000000A3F /* CoreServices.LaunchServices.framework */,
+        ECCB00000000000000000A40 /* CoreVideo.framework */,
+        ECCB00000000000000000A41 /* QTKit.framework */,
+        ECCB00000000000000000A42 /* CoreAudio.framework */,
+        ECCB00000000000000000A43 /* CoreServices.OSServices.framework */,
       );
       name = Frameworks;
       sourceTree = "<group>";
@@ -226,9 +226,9 @@
     ECCBA04517C22CBC00E46CF9 /* XIBs & Storyboards */ = {
       isa = PBXGroup;
       children = (
-        ECCB00000000000000000557 /* MainWindowController.xib */,
-        ECCB00000000000000000558 /* MainMenu.xib */,
-        ECCB00000000000000000559 /* SettingsViewController.xib */,
+        ECCB00000000000000000A44 /* MainWindowController.xib */,
+        ECCB00000000000000000A45 /* MainMenu.xib */,
+        ECCB00000000000000000A46 /* SettingsViewController.xib */,
       );
       name = "XIBs & Storyboards";
       sourceTree = "<group>";
@@ -236,8 +236,8 @@
     ECCBA05017C22D1F00E46CF9 /* Generated Code */ = {
       isa = PBXGroup;
       children = (
-        ECCB0000000000000000055A /* Classes.h */,
-        ECCB0000000000000000055B /* Classes.m */,
+        ECCB00000000000000000A47 /* Classes.h */,
+        ECCB00000000000000000A48 /* Classes.m */,
       );
       name = "Generated Code";
       sourceTree = "<group>";
@@ -256,13 +256,13 @@
 			);
 			name = "SendMeAGrib-UI";
 			productName = "SendMeAGrib-UI";
-			productReference = ECCB0000000000000000055C /* SendMeAGrib-UI.app */;
+			productReference = ECCB00000000000000000A49 /* SendMeAGrib-UI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ECCB0000000000000000052C /* Project object */ = {
+		ECCB00000000000000000A19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
@@ -325,5 +325,5 @@
 /* End XCConfigurationList section */
 
 	};
-rootObject = ECCB0000000000000000052C /* Project object */;
+rootObject = ECCB00000000000000000A19 /* Project object */;
 }

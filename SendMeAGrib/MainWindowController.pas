@@ -66,7 +66,7 @@ begin
   self := inherited initWithWindowNibName('MainWindowController');
   if assigned(self) then 
   begin
-    // Custom initialization
+  
     self.Interval := 6;
     self.Start := 6;
     self.NumberOfForecasts := 6;
@@ -91,30 +91,7 @@ begin
   var formatter := new IntegerFieldFormatter withMaximumLength(5);
   timesTextField.formatter := formatter;
 
-  var defaults := NSUserDefaults.standardUserDefaults;
-  
-  var value := defaults.stringForKey('Host');
-  if(not String.IsNullOrEmpty(value))then
-  begin
-    _settings.Host := value;
-  end;
-  
-  value := defaults.stringForKey('Port');
-  if(not String.IsNullOrEmpty(value))then
-  begin
-    _settings.Port := value;
-  end;
-  value := defaults.stringForKey('Username');
-  if(not String.IsNullOrEmpty(value))then
-  begin
-    _settings.Username := value;
-  end;
-  
-  value := defaults.stringForKey('Password');
-  if(not String.IsNullOrEmpty(value))then
-  begin
-    _settings.Password := value;
-  end;
+  _settings.restoreFromDefaults;
     
   self.KeysArrayController.content := Keys.SystemKeys;
   self.AnimationSelectionsArrayController.content:= self._animationSelections;
@@ -176,7 +153,7 @@ begin
     var mailer := new Mailer(self._settings.Host) withPort(465) withUsername(self._settings.Username) withPassword(self._settings.Password);
     mailer.Send(emailTo);
     
-    NSLog(emailTo.Subject);
+    NSLog('@%',emailTo.Subject);
     
   end;
     
@@ -207,13 +184,7 @@ begin
   self._settings.Username := viewController.Settings.Username;
   self._settings.Password := viewController.Settings.Password;
   
-  var defaults := NSUserDefaults.standardUserDefaults;
-  
-  defaults.setObject(viewController.Settings.Host) forKey('Host');
-  defaults.setObject(viewController.Settings.Port) forKey('Port');
-  defaults.setObject(viewController.Settings.Username) forKey('Username');
-  defaults.setObject(viewController.Settings.Password) forKey('Password');
-  defaults.synchronize;
+  _settings.saveToDefaults;
   
   self.settingsPopover.close;
 end;
