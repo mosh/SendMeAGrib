@@ -1,3 +1,5 @@
 Obj/*
 bin/*
 *.elements.user
+*.fire.cache
+obj/*
