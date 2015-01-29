@@ -27,10 +27,6 @@
 {
   // Placeholder method. Do not add code here.
 }
-- (IBAction)transformOutputValue:(id)sender
-{
-  // Placeholder method. Do not add code here.
-}
 
 @end
 

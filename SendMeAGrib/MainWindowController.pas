@@ -24,6 +24,9 @@ type
       
       method BuildOutputValue:String;
       
+      method observeValueForKeyPath(keyPath: NSString) ofObject(object: id) change(change: NSDictionary) context(context: ^Void);
+      
+      
   protected
   public
     method init: instancetype; override;
@@ -39,13 +42,17 @@ type
     [IBOutlet]property timesButton:weak NSButton;
     [IBOutlet]property numberOfDays:weak NSMatrix;
     [IBOutlet]property timesTextField:weak NSTextField;
+    [IBOutlet]property startTextField:weak NSTextField;
+    [IBOutlet]property intervalTextField:weak NSTextField;
+    [IBOutlet]property forecastTextField:weak NSTextField;
     [IBOutlet]property KeyPopupButton:weak NSPopUpButton;
     [IBOutlet]property outputValueTextField:weak NSTextField;
+    [IBOutlet]property intervalStepper:weak NSStepper;
+    [IBOutlet]property forecastStepper:weak NSStepper;
     
     [IBAction]method doSettings(sender:id);
     [IBAction]method sendMail(sender:id);
     [IBAction]method cancelRequest(sender:id);
-    [IBAction]method transformOutputValue(sender:id);
 
     property UseAnimation:Boolean;
     property UseAutomaticSchedule:Boolean;
@@ -86,10 +93,13 @@ method MainWindowController.windowDidLoad;
 begin
   inherited windowDidLoad();
   
-  transformOutputValue(self);
+  var timesFormatter := new IntegerFieldFormatter withMaximum(10) andMinimum(1);
+  timesTextField.formatter := timesFormatter;
   
-  var formatter := new IntegerFieldFormatter withMaximumLength(5);
-  timesTextField.formatter := formatter;
+  var otherFormatter := new IntegerFieldFormatter withMaximumLength(3);
+  startTextField.formatter := otherFormatter;
+  intervalTextField.formatter := otherFormatter;
+  forecastTextField.formatter := otherFormatter;
 
   _settings.restoreFromDefaults;
     
@@ -114,6 +124,19 @@ begin
     doSettings(self);
   end;
   
+  self.addObserver(self) forKeyPath('self.Interval') options(0) context(nil);
+  self.addObserver(self) forKeyPath('self.Start') options(0) context(nil);
+  self.addObserver(self) forKeyPath('self.NumberOfForecasts') options(0) context(nil);
+  
+  self.setValue(BuildOutputValue) forKeyPath('self.OutputValue');
+end;
+
+method MainWindowController.observeValueForKeyPath(keyPath: NSString) ofObject(object: id) change(change: NSDictionary) context(context: ^Void);
+begin
+  if((keyPath = 'self.Interval') or (keyPath = 'self.Start') or (keyPath = 'self.NumberOfForecasts'))then
+  begin
+    self.setValue(BuildOutputValue) forKeyPath('self.OutputValue');
+  end;
 end;
 
 method MainWindowController.sendMail(sender: id);
@@ -153,16 +176,10 @@ begin
     var mailer := new Mailer(self._settings.Host) withPort(465) withUsername(self._settings.Username) withPassword(self._settings.Password);
     mailer.Send(emailTo);
     
-    NSLog('@%',emailTo.Subject);
+    NSLog('%@',emailTo.Subject);
     
   end;
     
-end;
-
-method MainWindowController.transformOutputValue(sender: id); 
-begin
-  var newValue := BuildOutputValue;
-  self.setValue(newValue) forKeyPath('self.OutputValue');
 end;
 
 method MainWindowController.doSettings(sender: id);
@@ -197,7 +214,6 @@ end;
 method MainWindowController.bindTextField(textfield:NSTextField; object:NSObject;  keyPath:String);
 begin
   textfield.bind('value') toObject(object) withKeyPath(keyPath) options(nil);
-  //object.addObserver(textfield) forKeyPath(keyPath) options(0) context(nil);
   
 end;
 

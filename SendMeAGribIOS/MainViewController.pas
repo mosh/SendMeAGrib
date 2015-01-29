@@ -87,7 +87,7 @@ begin
   
   var startingValue := 6;
   
-  self.TimesTextField.text := '0';
+  self.TimesTextField.text := '1';
   self.ForecastStepper.value := startingValue;
   self.IntervalStepper.value := startingValue;
   self.StartTextField.text := startingValue.description;
@@ -126,6 +126,8 @@ begin
     
 
                              end;
+  
+  
   
   defaultCenter.addObserverForName(UITextFieldTextDidChangeNotification) object(StartTextField) queue(nil) usingBlock(_calculateOutputValueBlock); 
   defaultCenter.addObserverForName(UITextFieldTextDidChangeNotification) object(IntervalTextField) queue(nil) usingBlock(_calculateOutputValueBlock); 
@@ -268,19 +270,19 @@ end;
 
 method MainViewController.textField(textField: UITextField) shouldChangeCharactersInRange(range: NSRange) replacementString(string: NSString): BOOL;
 begin
-  //if(string.length=0)then
-  //begin
-  //  exit false;
-  //end;
 
-  var formatter := new IntegerFieldFormatter withMaximumLength(5);
-  var someNumber := formatter.numberFromString(string);
-  if(assigned(someNumber))then
+  if(textField = TimesTextField)then
   begin
-    exit true;
+    var formatter := new IntegerFieldFormatter withMaximum(10) andMinimum(1);
+    var someNumber := formatter.numberFromString(string);
+    exit iif(assigned(someNumber), true, false);
+  end
+  else
+  begin
+    var formatter := new IntegerFieldFormatter withMaximumLength(5);
+    var someNumber := formatter.numberFromString(string);
+    exit iif(assigned(someNumber), true, false);
   end;
-  
-  exit false;
 end;
 
 method MainViewController.UpdateSettings(newSettings: Settings);
