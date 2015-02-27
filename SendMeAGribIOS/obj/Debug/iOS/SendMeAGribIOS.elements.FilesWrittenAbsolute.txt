@@ -1,0 +1,3 @@
+/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGribIOS/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.pas
+/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGribIOS/bin/Debug/iOS/SendMeAGribIOS
+/Users/JohnMoshakis/Documents/develop/Nougat/SendMeAGrib/SendMeAGribIOS/obj/Debug/iOS/SendMeAGribIOS

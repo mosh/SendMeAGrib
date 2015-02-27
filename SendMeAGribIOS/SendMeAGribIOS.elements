@@ -14,6 +14,8 @@
         <SDK>iOS</SDK>
         <CreateAppBundle>True</CreateAppBundle>
         <InfoPListFile>.\Resources\Info.plist</InfoPListFile>
+        <ProvisioningProfileName>SendMeAGribiOS</ProvisioningProfileName>
+        <ProvisioningProfile>7821da28-d29b-495b-8bb5-cc2070c53538</ProvisioningProfile>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         <Optimize>false</Optimize>
@@ -43,9 +45,7 @@
         <Reference Include="rtl.fx"/>
         <Reference Include="CFNetwork.fx"/>
         <Reference Include="Security.fx"/>
-        <Reference Include="libMailCore-ios">
-            <HintPath>..\FX\libMailCore-ios\IOS Simulator\libMailCore-ios.fx</HintPath>
-        </Reference>
+        <Reference Include="libMailCore-ios"/>
         <Reference Include="libNougat.fx"/>
         <Reference Include="libSugar.fx"/>
         <Reference Include="libxml2.fx"/>

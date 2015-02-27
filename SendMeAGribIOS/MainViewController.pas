@@ -55,6 +55,7 @@ type
     [IBOutlet]property AnimationController:weak AnimationTableViewController;
     [IBOutlet]property IntervalStepper:weak UIStepper;
     [IBOutlet]property ForecastStepper:weak UIStepper;
+    [IBOutlet]property SendResultLabel:weak UILabel;
     
     [IBAction]method stepperValueChanged(sender:UIStepper);
   end;
@@ -134,6 +135,8 @@ begin
   defaultCenter.addObserverForName(UITextFieldTextDidChangeNotification) object(ForecastTextField) queue(nil) usingBlock(_calculateOutputValueBlock); 
   
   _calculateOutputValueBlock(nil);
+  
+  SendResultLabel.text := '';
 end;
 
 method MainViewController.didReceiveMemoryWarning;
@@ -231,9 +234,25 @@ begin
     builder.TimesOfForecast := self.ForecastOutputLabel.text;
   end;
   
+  SendResultLabel.text := '';
+  
   var emailTo := builder.Build;
   
   var mailer := new Mailer(self._settings.Host) withPort(Convert.ToInt32(self._settings.Port)) withUsername(self._settings.Username) withPassword(self._settings.Password);
+  
+  mailer.SentBlock := method (sent:Boolean) begin
+      dispatch_async(dispatch_get_main_queue(), method begin
+          if(sent)then
+          begin
+            SendResultLabel.text := 'Sent email to Global Marine Networks...';
+          end
+          else
+          begin
+            SendResultLabel.text := 'Failed to send email...';
+          end;
+        end);
+    end;
+  
   mailer.Send(emailTo);
   
   NSLog('%@',emailTo.Subject);

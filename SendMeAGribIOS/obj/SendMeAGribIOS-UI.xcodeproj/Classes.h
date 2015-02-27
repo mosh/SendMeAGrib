@@ -29,7 +29,7 @@
 
 @end
 
-@interface MainViewController: UIViewController
+@interface MainViewController: NSObject
 
 @property (weak, nonatomic) IBOutlet AnimationTableViewController *AnimationController;
 @property (weak, nonatomic) IBOutlet UIPopoverController *flipsidePopoverController;
@@ -39,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet UIStepper *IntervalStepper;
 @property (weak, nonatomic) IBOutlet UITextField *IntervalTextField;
 @property (weak, nonatomic) IBOutlet UIPickerView *KeysPickerView;
+@property (weak, nonatomic) IBOutlet UILabel *SendResultLabel;
 @property (weak, nonatomic) IBOutlet UITextField *StartTextField;
 @property (weak, nonatomic) IBOutlet UITextField *TimesTextField;
 @property (weak, nonatomic) IBOutlet UISwitch *UseAnimationSwitch;

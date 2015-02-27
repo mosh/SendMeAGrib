@@ -19,6 +19,8 @@ type
     method Send(sendTo:Email);
     constructor (hostName:String) withPort(port:Integer) withUsername(username:String) withPassword(password:String);
     
+    property SentBlock:block (sent:Boolean);
+    
   end;
 
 implementation
@@ -59,10 +61,18 @@ begin
       if(assigned(error))then
       begin
         NSLog('Error');
+        if(assigned(SentBlock))then
+        begin
+          SentBlock(false);
+        end;
       end
       else
       begin
         NSLog('Sent');
+        if(assigned(SentBlock))then
+        begin
+          SentBlock(true);
+        end;
       end;
     
     end);
